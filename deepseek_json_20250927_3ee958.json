@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "luxy-drip-ai",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "env": {
+    "REACT_APP_WEATHER_API": "@weather_api_key"
+  }
+}

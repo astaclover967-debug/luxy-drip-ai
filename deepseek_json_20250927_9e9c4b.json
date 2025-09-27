@@ -1,0 +1,12 @@
+{
+  "name": "luxy-drip-ai",
+  "version": "1.0.0",
+  "description": "AI-powered virtual fashion stylist",
+  "type": "module",
+  "scripts": {
+    "build": "mkdir -p public && cp index.html style.css script.js public/ || echo 'Files copied'",
+    "dev": "python3 -m http.server 3000"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
